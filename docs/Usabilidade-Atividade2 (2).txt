@@ -1,0 +1,54 @@
++ Tema: Sa�de Mental
+
++ Topicos:
+
+- Sindrome de Burnout
+- Ansiedade
+- Autodiagnostico
+- Depressao 
+- TOC
+- Bipolaridade
+
++ Metodos de Acessibilidade:
+
+TTS - https://www.nuance.com/omni-channel-customer-engagement/voice-and-ivr/text-to-speech.html
+https://ttsfree.com/
+Video
+Legendas
+Modo Escuro
+
++ Layout decende e simples
+https://www.einstein.br/saudemental
+https://www.paho.org/pt/topicos/saude-mental-dos-adolescentes
+https://www.adeb.pt/pages/o-que-e-a-saude-mental 
+
++ Conteudo
+https://www.saude.pr.gov.br/Pagina/Saude-Mental
+
++ Videos
+Sobre saude mental 
+Como melhorar sua saude mental
+depressao 
+toc 
+ansiedade 
+bipolaridade 
+bournout
+autodiagnostico
+cvs
+
++ Cada link leva para uma pagina separada
+
++ Paleta cores
+#8f7193
+#a788ab
+#c0a0c3
+#dfcae1
+#e5dde6
+
+background: -moz-linear-gradient(115deg, #CB95CF 35%, #AB82B5 100%, #F0B8FF 53%);/* FF3.6+ */
+background: -webkit-gradient(linear, 115deg, color-stop(35%, CB95CF), color-stop(100%, AB82B5), color-stop(53%, F0B8FF));/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(115deg, #CB95CF 35%, #AB82B5 100%, #F0B8FF 53%);/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(115deg, #CB95CF 35%, #AB82B5 100%, #F0B8FF 53%);/* Opera 11.10+ */
+background: -ms-linear-gradient(115deg, #CB95CF 35%, #AB82B5 100%, #F0B8FF 53%);/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+background: linear-gradient(115deg, #CB95CF 35%, #AB82B5 100%, #F0B8FF 53%);/* W3C */

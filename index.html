@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--===== meta tags =====-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mental Healer" />
+        <meta name="description" content="Site destinado a informar sobre saúde mental e exibir serviços para ajudar em sua saúde." />
+        <!--===== font awesome cdn link =====-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>Mental Health DB</title>
+        <!--===== css files =====-->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/globals.css" />
+        <link rel="stylesheet" href="./assets/css/home.css" />
+    </head>
+
+    <body>  
+        <div class="page" id="root">
+            <header class="page__header">
+                <div class="header-logo-box">
+                    <div class="box-logo">
+                        <img src="./assets/image/logos/logo.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
+                    </div>
+
+                    <div class="dark-mode-box">
+                        <i class="dark-mode fas fa-adjust"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- toggle menu bars -->
+                    <button type="button" class="btn toggle-menu toggle-menu-js fas fa-bars" id="toggle-menu-js" aria-details="Botão para telas mobile">
+                    </button>
+
+                    <nav class="navbar">
+                        <ul class="list-links">
+                            <li class="list-item" tabindex="1">
+                                <a href="./index.html" class="list-item__link" aria-label="Página Inicial">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="./depression.html" class="list-item__link" aria-label="Página referente a Depressão">
+                                    Depressão
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="./toc.html" class="list-item__link" aria-label="Página referente a TOC">
+                                    TOC
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="./ansiedade.html" class="list-item__link" aria-label="Página referente a Ansiedade">
+                                    Ansiedade
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="./bipolaridade.html" class="list-item__link" aria-label="Página referente a Bipolaridade">
+                                    Bipolaridade
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="./bournout.html" class="list-item__link" aria-label="Página referente a Sindrome de Bournout">
+                                    Bournout
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#self-diagnosis" class="list-item__link" aria-label="Página referente o Autodiagnóstico">
+                                    Autodiagnóstico
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="google_translate_element"></div>
+            </header>
+
+            <main class="page-content">
+
+                <section class="hero-container">
+                    <article class="hero">
+                        <div class="hero-content">
+                            <h3 class="hero-content__heading">
+                                A Mental Health DB está com você, para você e por você.
+                            </h3>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="container about-mind-healer">
+                    <header class="section-header">
+                        <h2 class="section-header__heading">
+                            O que é a Mental Health DB?
+                        </h2>
+                        <div class="section-header__tts-box">
+                            <audio controls title="Audio sobre o que é a Mental Health DB">
+                                <source src="./assets/tts/about_mental_health.wav" type="audio/wav" alt="Sobre a Mental Health DB" aria-label="Audio sobre o que é a Mental Health DB" />
+                            </audio>
+                        </div>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            A Mental Health DB é um site destinado a informar, exibir serviços e para alertar a respeito de como anda sua Sáude Mental. Buscando trazer um melhor bem estar atravez da informação.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container about-mental-health">
+                    <header class="section-header">
+                        <h2 class="section-header__heading">
+                            Afinal, o que é Saúde Mental?
+                        </h2>
+                        <div class="section-header__tts-box">
+                            <audio controls title="Audio explicando o que é Saúde Mental">
+                                <source src="./assets/tts/about_mental_health.wav" type="audio/wav" alt="Sobre Sáude Mental" aria-label="Audio explicando o que é Saúde Mental" />
+                            </audio>
+                        </div>
+                        <div class="section-header__video-box">
+                            <video class="video" controls title="Video explicando o que é Saúde Mental">
+                                <source src="https://www.youtube.com" alt="Nome do Video" aria-label="Video explicando o que é a saúde mental" />
+                            </video>
+                        </div>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container upgrade-mental-health">
+                    <header class="section-header">
+                        <h2 class="section-header__heading">
+                            Melhorando sua saúde mental
+                        </h2>
+                        <div class="section-header__tts-box">
+                            <audio controls title="Audio explicando o que é Saúde Mental">
+                                <source src="./assets/tts/about_mental_health.wav" type="audio/wav" alt="Sobre Sáude Mental" aria-label="Audio explicando como melhorar a saúde mental" />
+                            </audio>
+                        </div>
+                        <div class="section-header__video-box">
+                            <video class="video" controls title="Video explicando o que é Saúde Mental">
+                                <source src="https://www.youtube.com" alt="Nome do Video" aria-label="Video explicando como melhorar a saúde mental" />
+                            </video>
+                        </div>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nam doloribus error dolor fugiat illo magnam? Sequi, architecto eos fuga ipsam suscipit omnis facilis id nam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dicta cumque suscipit!
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container self-diagnosis" id="self-diagnosis">
+                    <header class="section-header">
+                        <h2 class="section-header__heading">
+                            Auto-diagnóstico
+                        </h2>
+                        <h4 class="section-header__subheading">
+                            Posso fazer um auto-diagnóstico?
+                        </h4>
+
+                        <div class="section-header__tts-box">
+                            <audio controls title="Precisa de ajuda?">
+                                <source src="./assets/tts/about_mental_health.wav" type="audio/wav" alt="Sobre Sáude Mental" aria-label="Audio explicando sobre o auto-diagnóstico" />
+                            </audio>
+                        </div>
+                        <div class="section-header__video-box">
+                            <video class="video" controls title="Video explicando sobre o auto-diagnóstico">
+                                <source src="https://www.youtube.com" alt="Nome do Video" aria-label="Video explicando sobre o auto-diagnóstico" />
+                            </video>
+                        </div>
+                    </header>
+
+                    <article class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet culpa quaerat fugiat quibusdam perspiciatis, veritatis, nesciunt at, alias voluptates dolorem nemo illum! Vel tempore sed, porro explicabo alias ducimus?</p>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet culpa quaerat fugiat quibusdam perspiciatis, veritatis, nesciunt at, alias voluptates dolorem nemo illum! Vel tempore sed, porro explicabo alias ducimus?</p>
+                    </article>
+                </section>
+
+                <section class="container need-help">
+                    <header class="section-header">
+                        <h2 class="section-header__heading">
+                            Precisa de ajuda?
+                        </h2>
+                        <h4 class="section-header__subheading">
+                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus, ullam tenetur sint eligendi rem!
+                        </h4>
+
+                        <div class="section-header__tts-box">
+                            <audio controls title="Precisa de ajuda?">
+                                <source src="./assets/tts/about_mental_health.wav" type="audio/wav" alt="Sobre Sáude Mental" aria-label="Audio contento meios de ajuda para sua saúde mental" />
+                            </audio>
+                        </div>
+                    </header>
+
+                    <article class="help-box">
+                        <div class="help-box__cvv">
+                            <img 
+                                class="image"
+                                src="./image/logos/cvv." 
+                                alt="CVV - Centro de Valorização a Vida" 
+                                title="CVV - Centro de Valorização a Vida" 
+                                aria-label="CVV - Centro de Valorização a Vida"
+                                aria-details="CVV - Centro de Valorização a Vida" 
+                            />
+                        </div>
+
+                        <div class="help-box__numbers">
+                            <div class="number-pm">
+                                <img 
+                                    class="image"
+                                    src="./image/logos/cvv." 
+                                    alt="Policia Militar" 
+                                    title="Policia Militar" 
+                                    aria-label="Policia Militar"
+                                    aria-details="Número da Policia Militar" 
+                                />  
+                            </div>
+
+                            <div class="number-samu">
+                                <img 
+                                    class="image"
+                                    src="./image/logos/cvv." 
+                                    alt="SAMU" 
+                                    title="SAMU" 
+                                    aria-label="SAMU"
+                                    aria-details="Número do SAMU" 
+                                />
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+            <footer class="page__footer">
+                <section>
+                    <h4 class="logo-footer">Mental Health DB</h4>
+
+                    <address class="credit">
+                        Todos os direitos reservados a Mental Health DB &copy; 2022
+                    </address>
+                </section>
+
+                <section class="footer-services">
+                    <ul class="list-services">
+                        <li class="list-item">
+                            <a href="#" class="list-item__link" title="Serviço 1" aria-label="Serviço 1" aria-details="Serviço 3...">
+                                Serviço 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="list-item__link" title="Serviço 2" aria-label="Serviço 2" aria-details="Serviço 3...">
+                                Serviço 2
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="list-item__link" title="Serviço 3" aria-label="Serviço 3" aria-details="Serviço 3...">
+                                Serviço 3
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </footer>
+
+            <!--===== scroll top button =====-->
+            <a href="#root" class="btn scroll-top" id="scroll-top-js">
+                <i class="fas fa-angle-up"></i>
+            </a>
+        </div>
+
+        <!--===== service api translate google =====-->
+        <script src="./src/services/googleTranslate.js"></script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </body>
+</html>
