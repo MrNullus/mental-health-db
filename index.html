@@ -20,62 +20,60 @@
         <div class="page" id="root">
             <header class="page__header">
                 <div class="header-logo-box">
-                    <div class="box-logo">
-                        <img src="./assets/image/logos/logo.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
-                    </div>
-
-                    <div class="dark-mode-box">
-                        <i class="dark-mode fas fa-adjust"></i>
-                    </div>
+                    <img src="./assets/image/logos/logo2.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
                 </div>
 
-                <div>
-                    <!-- toggle menu bars -->
-                    <button type="button" class="btn toggle-menu toggle-menu-js fas fa-bars" id="toggle-menu-js" aria-details="Botão para telas mobile">
-                    </button>
+                 <!-- menu bar -->
+                <button type="button" class="btn menu-bar fas fa-bars" id="menu-bar" aria-details="Botão para telas mobile">
+                </button>
+                
+                <nav class="navbar">
+                    <ul class="list-links">
+                        <li class="list-item" tabindex="1">
+                            <a href="./index.html" class="list-item__link" aria-label="Página Inicial">
+                                Home
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./depression.html" class="list-item__link" aria-label="Página referente a Depressão">
+                                Depressão
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./toc.html" class="list-item__link" aria-label="Página referente a TOC">
+                                TOC
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./ansiedade.html" class="list-item__link" aria-label="Página referente a Ansiedade">
+                                Ansiedade
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./bipolaridade.html" class="list-item__link" aria-label="Página referente a Bipolaridade">
+                                Bipolaridade
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./bournout.html" class="list-item__link" aria-label="Página referente a Sindrome de Bournout">
+                                Bournout
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#self-diagnosis" class="list-item__link" aria-label="Página referente o Autodiagnóstico">
+                                Autodiagnóstico
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <div class="dark-mode dark-mode-js">
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
 
-                    <nav class="navbar">
-                        <ul class="list-links">
-                            <li class="list-item" tabindex="1">
-                                <a href="./index.html" class="list-item__link" aria-label="Página Inicial">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./depression.html" class="list-item__link" aria-label="Página referente a Depressão">
-                                    Depressão
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./toc.html" class="list-item__link" aria-label="Página referente a TOC">
-                                    TOC
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./ansiedade.html" class="list-item__link" aria-label="Página referente a Ansiedade">
-                                    Ansiedade
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./bipolaridade.html" class="list-item__link" aria-label="Página referente a Bipolaridade">
-                                    Bipolaridade
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./bournout.html" class="list-item__link" aria-label="Página referente a Sindrome de Bournout">
-                                    Bournout
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#self-diagnosis" class="list-item__link" aria-label="Página referente o Autodiagnóstico">
-                                    Autodiagnóstico
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="box-google-translate">
+                    <div id="google_translate_element"></div>
                 </div>
-
-                <div id="google_translate_element"></div>
             </header>
 
             <main class="page-content">
@@ -291,7 +289,7 @@
             </footer>
 
             <!--===== scroll top button =====-->
-            <a href="#root" class="btn scroll-top" id="scroll-top-js">
+            <a href="#root" class="btn scroll-top" id="scroll-top">
                 <i class="fas fa-angle-up"></i>
             </a>
         </div>
@@ -299,6 +297,9 @@
         <!--===== service api translate google =====-->
         <script src="./src/services/googleTranslate.js"></script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <!--===== script js =====-->
+        <script src="./src/script.js"></script>
 
     </body>
 </html>

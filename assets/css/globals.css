@@ -57,10 +57,19 @@
 *   General 
 *    Styles
 ============ */
+html {
+    scroll-behavior: smooth;   
+    overflow-x: hidden;
+}
+
 body {
     min-height: 100vh;
     font-family: var(--font-secondary);
     font-size: 14px;
+}
+
+html, body, #root {
+    width: 100%;
 }
 
 a {
@@ -131,8 +140,10 @@ address
     cursor: pointer;
 }
 
-.toggle-menu {
+#menu-bar {
     display: none;
+    font-size: xx-large;
+    border-radius: 0;
 }
 
 .video {
@@ -155,64 +166,221 @@ address
 }
 
 
+/* ============
+*   Page
+============ */
 .page {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     min-height: 100vh;
-    padding: 2.6rem 2.2rem;
-    
-    @media (min-width: 768px) {
+    padding: 2.6rem 0;
+}
+
+@media (min-width: 768px) {
+    .page {
         flex-direction: row;
     }
-    @media (min-width: 1024px) {
+
+    .page__header {
         flex-direction: row;
         justify-content: space-between;
     }
-    @media (min-width: 1280px) {
+}
+@media (min-width: 1024px) {
+    .page {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.6rem 2.4rem;
     }
-    @media (min-width: 1600px) {
+}
+@media (min-width: 1280px) {
+    .page {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1600px) {
+    .page {
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
 
+/* ============
+*   Page
+*    Header
+============ */
 .page__header {
     display: flex;  
+    flex:  1;
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--white);
-    padding: 0.5rem 1rem;
-
-    @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
 
 .header-logo-box {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.box-logo {
-    max-height: 200px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+    margin-bottom: 2rem;
 }
 
 .logo-header {
     width: 100%;
     height: 200px;
     object-fit: contain;
-    border-radius: 12px;
 }
 
 .dark-mode {
-    color
+    background-image: url("../image/dark-mode.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navbar {
+    margin-top: 2rem;
+    padding: 2.2rem 0;
+    background: var(--purple-400);
+}
+
+.navbar .list-links {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list-item__link {  
+    font-size: var(--font-size-medium);
+    color: var(--white);
+    letter-spacing: var(--letter-spacing-small);
+    display: inline-block;
+    position: relative;
+}
+
+.list-item__link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--purple-500);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.list-item__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: none;
+    }
+
+    #menu-bar {
+        display: block;
+    }
+
+    .navbar.active {
+        margin-top:  .3rem;
+        top: 83px;
+        left:  0px;
+        display: block;
+        z-index: 1000;
+        width: 100%;
+        height: 526px;
+        padding: 0.3rem 0;
+    }
+
+    .navbar.active .list-links {
+        display: inline-block;
+    }
+
+    .navbar.active .list-links .list-item {
+        border-bottom: 2px solid white;
+        padding: 16px 0;
+        padding-left:  26px;
+    }
+
+    .list-item .list-item__link {
+        cursor: pointer;
+    }
+}
+    
+
+/* ============
+* Google 
+*  translate
+*     element
+============ */
+.box-google-translate {
+    background: #f2e6e6;
+    padding: 12px!important;
+}
+
+.goog-te-gadget {
+    white-space: wrap!important;
+    float: right;
+}
+
+
+/* ============
+*   Page 
+*    Content
+============ */
+.page-content {
+    margin:  4rem 0;
+    padding: 0 2.6rem;
+}
+
+
+/* ============
+*   Hero
+============ */
+.hero-container {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 440px;
+    background: rgba(0, 0, 0, 0.4);
+    padding-left: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/* ============
+*   Scroll
+*    Top
+============ */
+#scroll-top{
+    position: fixed;
+    transition: .5s linear;
+    z-index: 1000;
+}
+
+#scroll-top.active{
+    top:calc(100% - 12rem);
+    display:  initial;
 }
