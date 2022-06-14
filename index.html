@@ -20,11 +20,11 @@
         <div class="page" id="root">
             <header class="page__header">
                 <div class="header-logo-box">
-                    <img src="./assets/image/logos/logo2.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
+                    <img src="./assets/image/logos/logo.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
                 </div>
-
-                 <!-- menu bar -->
-                <button type="button" class="btn menu-bar fas fa-bars" id="menu-bar" aria-details="Botão para telas mobile">
+                
+                 <!-- toggle menu bars -->
+                 <button type="button" class="btn toggle-menu toggle-menu-js fas fa-bars" id="toggle-menu-js" aria-details="Botão para telas mobile">
                 </button>
                 
                 <nav class="navbar">
@@ -71,9 +71,7 @@
                     </ul>
                 </nav>
 
-                <div class="box-google-translate">
-                    <div id="google_translate_element"></div>
-                </div>
+                <div id="google_translate_element"></div>
             </header>
 
             <main class="page-content">
@@ -289,7 +287,7 @@
             </footer>
 
             <!--===== scroll top button =====-->
-            <a href="#root" class="btn scroll-top" id="scroll-top">
+            <a href="#root" class="btn scroll-top" id="scroll-top-js">
                 <i class="fas fa-angle-up"></i>
             </a>
         </div>
@@ -297,9 +295,6 @@
         <!--===== service api translate google =====-->
         <script src="./src/services/googleTranslate.js"></script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-        <!--===== script js =====-->
-        <script src="./src/script.js"></script>
 
     </body>
 </html>
