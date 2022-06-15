@@ -1,0 +1,33 @@
+.need-help {
+	margin-bottom: 7rem!important;
+}
+
+
+.help-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;	
+	align-items:  center;
+	gap:  3rem;
+}
+
+.number-cvv,
+.number-pm,
+.number-samu {
+	min-width: 200px;
+	max-width: 400px;
+	background:  #ddd;
+	padding: 1rem;
+	border-radius: 12px;
+	cursor:  pointer;
+}
+
+.help-box__numbers div img {
+	width: 300px;
+	max-width: 400px;
+} 
+
+.help-box__numbers div:not(:first-child) {
+	margin-top:  2rem;
+}
