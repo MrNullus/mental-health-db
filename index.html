@@ -19,6 +19,7 @@
     <body>  
         <div class="page" id="root">
             <header class="page__header">
+<<<<<<< HEAD
                 <div class="header-logo-box">
                     <img src="./assets/image/logos/logo.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
                 </div>
@@ -26,6 +27,11 @@
                  <!-- toggle menu bars -->
                  <button type="button" class="btn toggle-menu toggle-menu-js fas fa-bars" id="toggle-menu-js" aria-details="Botão para telas mobile">
                 </button>
+=======
+                <div class="center">
+                    <img src="./assets/image/logos/logo2.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
+                </div>
+>>>>>>> 428beddf71b37d1ddd06ce8fcebb77de37140e71
                 
                 <nav class="navbar">
                     <ul class="list-links">
@@ -71,7 +77,17 @@
                     </ul>
                 </nav>
 
+<<<<<<< HEAD
                 <div id="google_translate_element"></div>
+=======
+                <div class="box-google-translate">
+                     <!-- menu bar -->
+                    <button type="button" class="btn menu-bar fas fa-bars" id="menu-bar" aria-details="Botão para telas mobile">
+                    </button>
+                    
+                    <div id="google_translate_element"></div>
+                </div>
+>>>>>>> 428beddf71b37d1ddd06ce8fcebb77de37140e71
             </header>
 
             <main class="page-content">
@@ -173,12 +189,14 @@
 
                 <section class="container self-diagnosis" id="self-diagnosis">
                     <header class="section-header">
-                        <h2 class="section-header__heading">
-                            Auto-diagnóstico
-                        </h2>
-                        <h4 class="section-header__subheading">
-                            Posso fazer um auto-diagnóstico?
-                        </h4>
+                        <hgroup>
+                            <h2 class="section-header__heading">
+                                Auto-diagnóstico
+                            </h2>
+                            <h4 class="section-header__subheading">
+                                Posso fazer um auto-diagnóstico?
+                            </h4>
+                        </hgroup>
 
                         <div class="section-header__tts-box">
                             <audio controls title="Precisa de ajuda?">
@@ -201,12 +219,14 @@
 
                 <section class="container need-help">
                     <header class="section-header">
-                        <h2 class="section-header__heading">
-                            Precisa de ajuda?
-                        </h2>
-                        <h4 class="section-header__subheading">
-                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus, ullam tenetur sint eligendi rem!
-                        </h4>
+                        <hgroup>
+                            <h2 class="section-header__heading">
+                                Precisa de ajuda?
+                            </h2>
+                            <h4 class="section-header__subheading">
+                                Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus, ullam tenetur sint eligendi rem!
+                            </h4>
+                        </hgroup>
 
                         <div class="section-header__tts-box">
                             <audio controls title="Precisa de ajuda?">
@@ -216,69 +236,70 @@
                     </header>
 
                     <article class="help-box">
-                        <div class="help-box__cvv">
+                        <div class="number-cvv">
                             <img 
                                 class="image"
-                                src="./image/logos/cvv." 
+                                src="./assets/image/logos/cvv.webp" 
                                 alt="CVV - Centro de Valorização a Vida" 
                                 title="CVV - Centro de Valorização a Vida" 
-                                aria-label="CVV - Centro de Valorização a Vida"
                                 aria-details="CVV - Centro de Valorização a Vida" 
                             />
                         </div>
 
                         <div class="help-box__numbers">
-                            <div class="number-pm">
-                                <img 
-                                    class="image"
-                                    src="./image/logos/cvv." 
-                                    alt="Policia Militar" 
-                                    title="Policia Militar" 
-                                    aria-label="Policia Militar"
-                                    aria-details="Número da Policia Militar" 
-                                />  
-                            </div>
+                            <div class="help-container">
+                                <div class="number-pm">
+                                    <img 
+                                        class="image"
+                                        src="./assets/image/logos/bombeiros.svg" 
+                                        alt="Corpo de Bombeiros 193" 
+                                        title="Corpo de Bombeiros" 
+                                        aria-details="Corpo de Bombeiros" 
+                                    />  
+                                </div>
 
-                            <div class="number-samu">
-                                <img 
-                                    class="image"
-                                    src="./image/logos/cvv." 
-                                    alt="SAMU" 
-                                    title="SAMU" 
-                                    aria-label="SAMU"
-                                    aria-details="Número do SAMU" 
-                                />
+                                <div class="number-samu">
+                                    <img 
+                                        class="image"
+                                        src="./assets/image/logos/samu.jpg" 
+                                        alt="SAMU 192" 
+                                        title="SAMU" 
+                                        aria-details="Número do SAMU" 
+                                    />
+                                </div>
                             </div>
                         </div>
                     </article>
                 </section>
             </main>
 
+            <div class="box-google-translate">
+            </div>
             <footer class="page__footer">
-                <section>
+                <section class="footer-credits">
                     <h4 class="logo-footer">Mental Health DB</h4>
 
                     <address class="credit">
-                        Todos os direitos reservados a Mental Health DB &copy; 2022
+                        Todos os direitos reservados a <strong>Mental Health DB &copy; 2022</strong>
                     </address>
                 </section>
 
                 <section class="footer-services">
                     <ul class="list-services">
                         <li class="list-item">
-                            <a href="#" class="list-item__link" title="Serviço 1" aria-label="Serviço 1" aria-details="Serviço 3...">
+                            <a href="#" class="list-item__link" title="Serviço 1" aria-details="Serviço 3...">
                                 Serviço 1
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#" class="list-item__link" title="Serviço 2" aria-label="Serviço 2" aria-details="Serviço 3...">
+                        <li class="list-item">
+                            <a href="#" class="list-item__link" title="Serviço 2" aria-details="Serviço 3...">
                                 Serviço 2
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#" class="list-item__link" title="Serviço 3" aria-label="Serviço 3" aria-details="Serviço 3...">
+                        <li class="list-item">
+                            <a href="#" class="list-item__link" title="Serviço 3" aria-details="Serviço 3...">
                                 Serviço 3
                             </a>
                         </li>
