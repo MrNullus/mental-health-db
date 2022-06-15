@@ -1,7 +1,7 @@
 /* ============
 *   Fonts
 ============ */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Poppins:wght@100;200;300;400&family=Simonetta&display=swap');
 
 
 /* ============
@@ -24,6 +24,7 @@
     --gradient-purple-light: -webkit-linear-gradient(115deg, #e5dde6 35%, #dfcae1 100%, #cb95cf 53%);
 
     /* fonts */
+    --font-logo: 'Simonetta', cursive;
     --font-primary: 'Dancing Script', cursive;
     --font-secondary: 'Poppins', sans-serif;
 
@@ -44,7 +45,8 @@
     --line-height-small: 1.2;
     --line-height-medium: 1.4;
     --line-height-large: 1.6;
-    --line-height-xlarge: 1.8;
+    --line-height-xxlarge: 2.0;
+    
 
     /* letter spacing */
     --letter-spacing-small: 0.1rem;
@@ -58,8 +60,7 @@
 *    Styles
 ============ */
 html {
-    scroll-behavior: smooth;   
-    overflow-x: hidden;
+    scroll-behavior: smooth;  
 }
 
 body {
@@ -71,6 +72,10 @@ body {
 html, body, #root {
     width: 100%;
 }
+
+/* html {
+    font-size: 78.5%;
+} */
 
 a {
    text-decoration: none; 
@@ -142,8 +147,7 @@ address
 
 #menu-bar {
     display: none;
-    font-size: xx-large;
-    border-radius: 0;
+    font-size: large;
 }
 
 .video {
@@ -176,34 +180,15 @@ address
     align-items: stretch;
     justify-content: center;
     min-height: 100vh;
-    padding: 2.6rem 0;
 }
 
 @media (min-width: 768px) {
     .page {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .page__header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-@media (min-width: 1024px) {
-    .page {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-@media (min-width: 1280px) {
-    .page {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-@media (min-width: 1600px) {
-    .page {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 }
@@ -215,25 +200,45 @@ address
 ============ */
 .page__header {
     display: flex;  
-    flex:  1;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
     color: var(--white);
 }
 
-.header-logo-box {
+.center {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    align-content: center;  
-    margin-bottom: 2rem;
+    justify-content: space-between;
 }
 
 .logo-header {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu-bar {
+    margin: 12px 0;
+}
+
+@media (min-width: 320px) {
+    .logo-header {
+        max-width: 100%;
+        height: 172px;
+        object-fit: cover;
+    }
+}
+@media (min-width: 768px) {
+    .logo-header {
+        max-width: 100%!important;
+        height: auto!important;
+    }
+
+    #menu-bar {
+        margin-right: 12px;
+    }
 }
 
 .dark-mode {
@@ -247,7 +252,6 @@ address
 }
 
 .navbar {
-    margin-top: 2rem;
     padding: 2.2rem 0;
     background: var(--purple-400);
 }
@@ -294,16 +298,18 @@ address
 
     #menu-bar {
         display: block;
+        position: absolute;
+        right: 21px;
+        top: 112px;
     }
 
     .navbar.active {
-        margin-top:  .3rem;
         top: 83px;
         left:  0px;
         display: block;
-        z-index: 1000;
+        z-index: 0;
         width: 100%;
-        height: 526px;
+        height: 527px;
         padding: 0.3rem 0;
     }
 
@@ -329,6 +335,7 @@ address
 *     element
 ============ */
 .box-google-translate {
+    height: 37px;
     background: #f2e6e6;
     padding: 12px!important;
 }
@@ -344,8 +351,7 @@ address
 *    Content
 ============ */
 .page-content {
-    margin:  4rem 0;
-    padding: 0 2.6rem;
+    /* margin:  4rem 0; */
 }
 
 
@@ -353,21 +359,117 @@ address
 *   Hero
 ============ */
 .hero-container {
+    width: 100%;
+    height: 60vh;
+    max-height: 60vh;
+    margin-bottom: 4.4rem;
+    background-color: var(--purple-400);
+}
+
+.hero {
     display:  flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-
+    align-items: center;
     width: 100%;
-    height: 440px;
+    height: inherit;
     background: rgba(0, 0, 0, 0.4);
-    padding-left: 2rem;
     color: white;
     text-align: center;
 }
 
+.hero-content {
+    padding: 0px 2.45rem;
+}
+
+.container {
+    margin: 3.6rem 0;
+    padding: 0 1.9rem;
+}
 
 
+/* ============
+*   Section
+*    Header
+============ */
+.section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 2rem 0.5rem;
+    gap: 2.2rem;
+}
+
+.section-header__heading {
+    font-size: var(--font-size-xxlarge);
+    padding-bottom: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--purple-600);
+}
+
+.section-header__subheading {
+    color: rgb(66, 64, 64);
+}
+
+.section-header__tts-box audio {
+    width: 80%;
+}
+
+.section-header__video-box video {
+    min-height: 200px;
+    max-height: 500px;
+}
+
+@media (max-width: 1024px) {
+    .section-header__video-box video {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+.content p {
+    text-indent: 28pt;
+    letter-spacing: var(--letter-spacing-small);
+    line-height: var(--line-height-xxlarge);
+}
+
+
+/* ============
+*   Footer
+============ */
+.page__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-items: center;
+    background: #8F7193;
+    height: 250px;
+}
+
+.footer-credits {
+    border-right: 2px solid var(--purple-300);
+    padding: 3rem;
+}
+
+.logo-footer {
+    font-family: var(--font-logo);
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.footer-services {
+    width: 100%;
+}
+
+.list-services .list-item {
+    padding: 0.46rem 0;
+}
+
+.credit strong{
+    font-weight:  var(--font-weight-bold);
+    font-family:  var(--font-logo);
+}
 
 
 /* ============
@@ -378,6 +480,7 @@ address
     position: fixed;
     transition: .5s linear;
     z-index: 1000;
+    right: 58px;
 }
 
 #scroll-top.active{
