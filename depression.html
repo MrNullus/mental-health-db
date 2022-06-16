@@ -11,70 +11,74 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <title>Mental Health DB || Depressão</title>
         <!--===== css files =====-->
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+         <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/globals.css" />
+        <link rel="stylesheet" href="./assets/css/mental-disease.css" />
     </head>
 
     <body>
         <div class="page" id="root">
-            <header class="page__header">
+           <header class="page__header">
                 <div class="center">
-                    <img class="logo-header" src="" alt="Mental Health DB" title="Mental Health DB" />
-
-                    <img src="./assets/image/dark-mode.png" alt="Dark Mode" class="dark-mode" id="dark-mode" />
+                    <img src="./assets/image/logos/logo2.png" class="logo-header" alt="Mental Health DB" title="Mental Health DB" />
                 </div>
+                
+                <nav class="navbar">
+                     <ul class="list-links">
+                        <li class="list-item" tabindex="1">
+                            <a href="./index.html#hero-main" class="list-item__link" aria-label="Página Inicial">
+                                Home
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./depression.html#hero-depre" class="list-item__link" aria-label="Página referente a Depressão">
+                                Depressão
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./toc.html#hero-toc" class="list-item__link" aria-label="Página referente a TOC">
+                                TOC
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./ansiedade.html#hero-ansiedade" class="list-item__link" aria-label="Página referente a Ansiedade">
+                                Ansiedade
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./bipolaridade.html#hero-bipo" class="list-item__link" aria-label="Página referente a Bipolaridade">
+                                Bipolaridade
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./bournout.html#hero-bournout" class="list-item__link" aria-label="Página referente a Sindrome de Bournout">
+                                Bournout
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#self-diagnosis" class="list-item__link" aria-label="Página referente o Autodiagnóstico">
+                                Autodiagnóstico
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <div class="dark-mode dark-mode-toggle">
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
 
-                <div>
-                    <!-- toggle menu bars -->
-                    <button type="button" class="btn toggle-menu fas fa-bars" id="toggle-menu-js" aria-details="Botão para telas mobile">
+                <div class="box-google-translate">
+                     <!-- menu bar -->
+                    <button type="button" class="btn menu-bar fas fa-bars" id="menu-bar" aria-details="Botão para telas mobile">
                     </button>
-
-                    <nav class="navbar">
-                        <ul class="list-links">
-                            <li class="list-item" tabindex="1" tabindex>
-                                <a href="./index.html" class="list-item__link" aria-label="Página Inicial">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./depression.html" class="list-item__link" aria-label="Página referente a Depressão">
-                                    Depressão
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./toc.html" class="list-item__link" aria-label="Página referente a TOC">
-                                    TOC
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./ansiedade.html" class="list-item__link" aria-label="Página referente a Ansiedade">
-                                    Ansiedade
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./bipolaridade.html" class="list-item__link" aria-label="Página referente a Bipolaridade">
-                                    Bipolaridade
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="./bournout.html" class="list-item__link" aria-label="Página referente a Sindrome de Bournout">
-                                    Bournout
-                                </a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#self-diagnosis" class="list-item__link" aria-label="Página referente o Autodiagnóstico">
-                                    Autodiagnóstico
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    
+                    <div id="google_translate_element"></div>
                 </div>
-
-                <div id="google_translate_element"></div>
             </header>
 
             <main class="page-content">
                 <section class="hero-container">
-                    <article class="hero">
+                    <article class="hero" id="hero-depre">
                         <div class="hero-content">
                             <h3 class="hero-content__heading">
                                 Depressão: a epidemia do século.
@@ -83,7 +87,7 @@
                     </article>
                 </section>
 
-                <section class="container about-mind-healer">
+                <section class="container mental-disease">
                     <header class="section-header">
                         <h2 class="section-header__heading">
                             Lorem
@@ -115,38 +119,41 @@
                 </section>	
             </main>
 
+            <div class="box-google-translate">
+            </div>
             <footer class="page__footer">
-                <section>
+                <section class="footer-credits">
                     <h4 class="logo-footer">Mental Health DB</h4>
 
                     <address class="credit">
-                        Todos os direitos reservados a Mental Health DB &copy; 2022
+                        Todos os direitos reservados a <strong>Mental Health DB &copy; 2022</strong>
                     </address>
                 </section>
 
                 <section class="footer-services">
+                    <h4>Veja também</h4>
+
                     <ul class="list-services">
                         <li class="list-item">
-                            <a href="#" class="list-item__link" title="Serviço 1" aria-label="Serviço 1" aria-details="Serviço 3...">
-                                Serviço 1
+                            <a href="www.cvv.org.br" class="list-item__link" title="CVV | Centro de Valorização da Vida" aria-details="CVV | Centro de Valorização da Vida">
+                                CVV | Centro de Valorização da Vida
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#" class="list-item__link" title="Serviço 2" aria-label="Serviço 2" aria-details="Serviço 3...">
-                                Serviço 2
+                        <li class="list-item">
+                            <a href="#" class="list-item__link" title="Psicólogos online - Doctoralia" aria-details="Psicólogos online - Doctoralia">
+                                Psicólogos online - Doctoralia
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#" class="list-item__link" title="Serviço 3" aria-label="Serviço 3" aria-details="Serviço 3...">
-                                Serviço 3
+                        <li class="list-item">
+                            <a href="#" class="list-item__link" title="Central Psicologia - Fale com um psicólogo online!" aria-details="Central Psicologia - Fale com um psicólogo online!">
+                                Central Psicologia - Fale com um psicólogo online!
                             </a>
                         </li>
                     </ul>
                 </section>
             </footer>
-
             <!--===== scroll top button =====-->
             <a href="#root" class="fas fa-angle-up" id="scroll-top"></a>
         </div>
@@ -154,6 +161,9 @@
         <!--===== service api translate google =====-->
         <script src="./src/services/googleTranslate.js"></script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <!--===== script js =====-->
+        <script src="./src/script.js"></script>
 
     </body>
 </html>

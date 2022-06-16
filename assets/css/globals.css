@@ -24,8 +24,7 @@
     --gradient-purple-light: -webkit-linear-gradient(115deg, #e5dde6 35%, #dfcae1 100%, #cb95cf 53%);
 
     /* fonts */
-    --font-logo: 'Simonetta', cursive;
-    --font-primary: 'Dancing Script', cursive;
+    --font-primary: 'Simonetta', cursive;
     --font-secondary: 'Poppins', sans-serif;
 
     /* font sizes */
@@ -67,6 +66,11 @@ body {
     min-height: 100vh;
     font-family: var(--font-secondary);
     font-size: 14px;
+}
+
+body.dark {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 html, body, #root {
@@ -130,7 +134,7 @@ address
 .image {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .btn {
@@ -201,7 +205,6 @@ address
 .page__header {
     display: flex;  
     flex-direction: column;
-    flex-wrap: wrap;
     flex: 1;
     color: var(--white);
 }
@@ -209,9 +212,7 @@ address
 .center {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    flex: 1;
 }
 
 .logo-header {
@@ -223,11 +224,20 @@ address
     margin: 12px 0;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 420px) {
     .logo-header {
         max-width: 100%;
-        height: 172px;
+        height: 272px;
         object-fit: cover;
+    }
+    #menu-bar {
+        right: -12px!important;
+        top: 214px!important;
+    }
+}
+@media (min-width: 460px) {
+    .logo-header {
+        height: 198px!important;
     }
 }
 @media (min-width: 768px) {
@@ -299,7 +309,7 @@ address
     #menu-bar {
         display: block;
         position: absolute;
-        right: 21px;
+        right: 10px;
         top: 112px;
     }
 
@@ -334,10 +344,14 @@ address
 *  translate
 *     element
 ============ */
+body.dark .box-google-translate { 
+    background-color: var(--purple-500);
+}
+
 .box-google-translate {
     height: 37px;
     background: #f2e6e6;
-    padding: 12px!important;
+    padding: 16px!important;
 }
 
 .goog-te-gadget {
@@ -351,7 +365,10 @@ address
 *    Content
 ============ */
 .page-content {
-    /* margin:  4rem 0; */
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -360,10 +377,13 @@ address
 ============ */
 .hero-container {
     width: 100%;
-    height: 60vh;
-    max-height: 60vh;
+    height: 34rem;
     margin-bottom: 4.4rem;
     background-color: var(--purple-400);
+}
+
+body.dark .hero-container {
+    background-color: var(--purple-600);
 }
 
 .hero {
@@ -372,7 +392,7 @@ address
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: inherit;
+    height: 100%;
     background: rgba(0, 0, 0, 0.4);
     color: white;
     text-align: center;
@@ -383,8 +403,15 @@ address
 }
 
 .container {
+    max-width: 65%;
     margin: 3.6rem 0;
     padding: 0 1.9rem;
+}
+
+@media (max-width: 620px) { 
+    .container {
+        max-width: 85%;
+    }
 }
 
 
@@ -407,8 +434,16 @@ address
     text-decoration-color: var(--purple-600);
 }
 
+body.dark .section-header__heading {
+    text-decoration-color: var(--purple-500);
+}
+
 .section-header__subheading {
     color: rgb(66, 64, 64);
+}
+
+body.dark .section-header__subheading {
+    color: rgb(112, 112, 112);
 }
 
 .section-header__tts-box audio {
@@ -444,16 +479,17 @@ address
     gap: 2rem;
     place-items: center;
     background: #8F7193;
-    height: 250px;
+    min-height: 250px;
 }
 
 .footer-credits {
     border-right: 2px solid var(--purple-300);
     padding: 3rem;
+    padding-bottom: 1rem;
 }
 
 .logo-footer {
-    font-family: var(--font-logo);
+    font-family: var(--font-primary);
     margin-bottom: 2rem;
     color: var(--white);
 }
@@ -462,13 +498,51 @@ address
     width: 100%;
 }
 
+.footer-services h4 {
+    padding-left: 3rem;
+    font-family: var(--font-primary);
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
 .list-services .list-item {
     padding: 0.46rem 0;
 }
 
+.list-services .list-item .list-item__link {
+    font-size: var(--font-size-small);
+}
+
+.credit {
+    font-size: var(--font-size-small);
+    color: var(--white);
+    text-align: left;
+}
 .credit strong{
     font-weight:  var(--font-weight-bold);
-    font-family:  var(--font-logo);
+    font-family:  var(--font-primary);
+}
+
+@media (max-width: 620px) {
+    .page__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .footer-credits {
+        border-right: none;
+    }
+
+    .footer-services .list-services {
+        padding: 0rem 3rem;
+    }
+
+    .section-header__tts-box audio {
+        width: 100%;
+    }
 }
 
 

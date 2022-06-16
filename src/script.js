@@ -15,12 +15,8 @@ window.onscroll = () => {
     }
 }
 
-function loader() {
-    document.querySelector('.loader-container').classList.add('fade-out');
-}
+const toggle = document.querySelector(".dark-mode-toggle");
 
-function fadeOut() {
-    setInterval(loader, 3000);
-}
-
-window.onload = fadeOut();
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
