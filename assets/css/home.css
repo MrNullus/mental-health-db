@@ -2,25 +2,22 @@
 	margin-bottom: 7rem!important;
 }
 
-
 .help-box {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: center;	
 	align-items:  center;
-	gap:  3rem;
+	gap: 3rem;
+	margin-top: 1rem;
 }
 
 .number-cvv,
 .number-pm,
 .number-samu {
-	min-width: 200px;
-	max-width: 400px;
 	background:  #ddd;
 	padding: 1rem;
-	border-radius: 12px;
-	cursor:  pointer;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .help-box__numbers div img {

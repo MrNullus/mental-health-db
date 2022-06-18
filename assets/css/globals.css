@@ -9,6 +9,7 @@
 ============ */
 :root {
     /* colors */
+	--color-selection: #fff;
     --white: #fff;
     --black: #111;
     --purple-600: #8f7193;
@@ -58,6 +59,11 @@
 *   General 
 *    Styles
 ============ */
+*::selection {
+	background-color: #ADE1F5;
+	color: var(--color-selection);
+}
+
 html {
     scroll-behavior: smooth;  
 }
@@ -134,7 +140,7 @@ address
 .image {
     width: 100%;
     height: auto;
-    /* object-fit: cover; */
+    border-radius: 5px;
 }
 
 .btn {
@@ -158,6 +164,7 @@ address
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .scroll-top {
@@ -212,12 +219,12 @@ address
 .center {
     display: flex;
     flex-direction: row;
-    flex: 1;
-}
+    flex: 1;}
 
 .logo-header {
     max-width: 100%;
     height: auto;
+    border-radius: 0px;
 }
 
 .menu-bar {
@@ -225,14 +232,13 @@ address
 }
 
 @media (max-width: 420px) {
+    html {
+        font-size: 67.9%;
+    }
     .logo-header {
         max-width: 100%;
         height: 272px;
         object-fit: cover;
-    }
-    #menu-bar {
-        right: -12px!important;
-        top: 214px!important;
     }
 }
 @media (min-width: 460px) {
@@ -244,10 +250,6 @@ address
     .logo-header {
         max-width: 100%!important;
         height: auto!important;
-    }
-
-    #menu-bar {
-        margin-right: 12px;
     }
 }
 
@@ -300,17 +302,26 @@ address
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-@media (max-width: 1024px) {
-    .navbar {
-        display: none;
+    
+@media (max-width: 375px) {
+    .navbar.active {
+        height: 457px!important;
     }
-
+}
+	
+@media (max-width: 1024px) {
+    .list-item__link {
+        font-size: var(--font-size-medium);
+    }
     #menu-bar {
         display: block;
         position: absolute;
-        right: 10px;
-        top: 112px;
+        right: 17px!important;
+        top: 5px;
+    }
+
+    .navbar {
+        display: none;
     }
 
     .navbar.active {
@@ -322,7 +333,10 @@ address
         height: 527px;
         padding: 0.3rem 0;
     }
-
+    .navbar.active + .box-google-translate .menu-bar {
+        top: -532px!important;
+        z-index: 3;
+    }
     .navbar.active .list-links {
         display: inline-block;
     }
@@ -337,12 +351,12 @@ address
         cursor: pointer;
     }
 }
-    
+
 
 /* ============
-* Google 
-*  translate
-*     element
+* Box 
+*   Google 
+*     translate
 ============ */
 body.dark .box-google-translate { 
     background-color: var(--purple-500);
@@ -352,12 +366,94 @@ body.dark .box-google-translate {
     height: 37px;
     background: #f2e6e6;
     padding: 16px!important;
+    position: relative;
 }
 
-.goog-te-gadget {
-    white-space: wrap!important;
-    float: right;
+#google_translate_element {
+    display: none;
 }
+
+.language {
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+    background-color: #111;
+    padding: 5px 10px;
+}
+.language-selected {	
+    display: flex;   
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    line-height: 25px;  
+}
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 42px;
+    height: 30px;
+    background-image: url('https://countryflagsapi.com/png/br');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.language-selected.change-br:before {
+    background-image: url('https://countryflagsapi.com/png/br');
+}
+.language-selected.change-en:before {
+    background-image: url('https://countryflagsapi.com/png/usa');
+}
+.language-selected.change-es:before {
+    background-image: url('https://countryflagsapi.com/png/es');
+}
+
+.language ul {
+    position: absolute;
+    width: 140px;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    display: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #252525;
+    padding: 5px 10px;
+}
+
+.language ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+a.br:before {
+    background-image: url('https://countryflagsapi.com/png/br');
+}
+a.en:before {
+    background-image: url('https://countryflagsapi.com/png/usa');
+}
+a.es:before {
+    background-image: url('https://countryflagsapi.com/png/es');
+}
+
+.language:hover ul {
+    display: block;
+}
+
 
 
 /* ============
@@ -369,6 +465,7 @@ body.dark .box-google-translate {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4.6rem;
 }
 
 
@@ -377,8 +474,8 @@ body.dark .box-google-translate {
 ============ */
 .hero-container {
     width: 100%;
-    height: 34rem;
-    margin-bottom: 4.4rem;
+    height: 96vh;
+    margin-bottom: 2.4rem;
     background-color: var(--purple-400);
 }
 
@@ -403,8 +500,7 @@ body.dark .hero-container {
 }
 
 .container {
-    max-width: 65%;
-    margin: 3.6rem 0;
+    max-width: 85%;
     padding: 0 1.9rem;
 }
 
@@ -423,8 +519,8 @@ body.dark .hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    padding: 2rem 0.5rem;
     gap: 2.2rem;
+    margin-bottom: 3.45rem;
 }
 
 .section-header__heading {
@@ -467,6 +563,8 @@ body.dark .section-header__subheading {
     text-indent: 28pt;
     letter-spacing: var(--letter-spacing-small);
     line-height: var(--line-height-xxlarge);
+    margin-top: 1.45rem;
+    text-align: justify;
 }
 
 
@@ -474,6 +572,7 @@ body.dark .section-header__subheading {
 *   Footer
 ============ */
 .page__footer {
+    padding: 3rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -492,6 +591,7 @@ body.dark .section-header__subheading {
     font-family: var(--font-primary);
     margin-bottom: 2rem;
     color: var(--white);
+    border-radius: 5px;
 }
 
 .footer-services {
@@ -524,6 +624,14 @@ body.dark .section-header__subheading {
 }
 
 @media (max-width: 620px) {
+    .help-container > div {
+        max-width: 200px;
+    }
+    .help-container > div > img {
+        width: 100%!important;
+        object-fit: contain;
+    }
+
     .page__footer {
         display: flex;
         flex-direction: column;
@@ -554,7 +662,7 @@ body.dark .section-header__subheading {
     position: fixed;
     transition: .5s linear;
     z-index: 1000;
-    right: 58px;
+    right: 2%;
 }
 
 #scroll-top.active{
