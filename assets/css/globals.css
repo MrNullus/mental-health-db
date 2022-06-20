@@ -546,16 +546,20 @@ body.dark .section-header__subheading {
     width: 80%;
 }
 
-.section-header__video-box video {
-    min-height: 200px;
-    max-height: 500px;
+@media (max-width: 320px) {
+    .section-header__video-box iframe {
+        height: 200px;
+    }
 }
-
-@media (max-width: 1024px) {
-    .section-header__video-box video {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+@media (max-width: 768px) {
+    .section-header__video-box iframe {
+        height: 291px;
+    }
+}
+@media (min-width: 967px) {
+    .section-header__video-box iframe {
+        height: 540px;
+        max-height: 600px;
     }
 }
 
