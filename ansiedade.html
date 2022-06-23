@@ -28,37 +28,37 @@
                 <nav class="navbar">
                      <ul class="list-links">
                         <li class="list-item" tabindex="1">
-                            <a href="./index.html#hero-main" class="list-item__link" aria-label="Página Inicial">
+                            <a href="./index.html#hero-main" class="list-item__link" aria-labelledby="Página Inicial">
                                 Home
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="./depression.html#hero-depress" class="list-item__link" aria-label="Página referente a Depressão">
+                            <a href="./depression.html#hero-depress" class="list-item__link" aria-labelledby="Página referente a Depressão">
                                 Depressão
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="./toc.html#hero-toc" class="list-item__link" aria-label="Página referente a TOC">
+                            <a href="./toc.html#hero-toc" class="list-item__link" aria-labelledby="Página referente a TOC">
                                 TOC
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="./ansiedade.html#hero-ansiedade" class="list-item__link" aria-label="Página referente a Ansiedade">
+                            <a href="./ansiedade.html#hero-ansiedade" class="list-item__link" aria-labelledby="Página referente a Ansiedade">
                                 Ansiedade
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="./bipolaridade.html#hero-bipo" class="list-item__link" aria-label="Página referente a Bipolaridade">
+                            <a href="./bipolaridade.html#hero-bipo" class="list-item__link" aria-labelledby="Página referente a Bipolaridade">
                                 Bipolaridade
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="./bournout.html#hero-bournout" class="list-item__link" aria-label="Página referente a Sindrome de Bournout">
-                                Bournout
+                            <a href="./burnout.html#hero-burnout" class="list-item__link" aria-labelledby="Página referente a Sindrome de Burnout">
+                                Burnout
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="index.html#self-diagnosis" class="list-item__link" aria-label="Página referente o Autodiagnóstico">
+                            <a href="index.html#self-diagnosis" class="list-item__link" aria-labelledby="Página referente o Autodiagnóstico">
                                 Autodiagnóstico
                             </a>
                         </li>
@@ -71,7 +71,7 @@
 
                 <div class="box-google-translate">
                     <!-- menu bar -->
-                    <button type="button" class="btn menu-bar fas fa-bars" id="menu-bar" aria-details="Botão para telas mobile">
+                    <button type="button" class="btn menu-bar fas fa-bars" id="menu-bar" aria-labelledby="Botão para telas mobile">
                     </button>
 
                     <div id="google_translate_element" class="boxTradutor"></div>
@@ -89,15 +89,15 @@
             </header>
 
             <main class="page-content">
-                <section class="hero-container">
-                    <article class="hero" id="hero-ansiedade">
+                <div class="hero-container" id="hero-ansiedade">
+                    <div class="hero">
                         <div class="hero-content">
                             <h3 class="hero-content__heading">
                                 Ansiedade: o desespero pelo amanhã
                             </h3>
                         </div>
-                    </article>
-                </section>
+                    </div>
+                </div>
 
                 <section class="container mental-disease">
                     <header class="section-header">
@@ -106,39 +106,164 @@
                         </h2>
 
                         <div class="section-header__tts-box">
-                            <audio controls title="Audio sobre a depressão">
-                                <source src="./assets/tts/about_mental_health.wav" type="audio/wav" alt="Audio sobre a ansiedade" aria-details="Audio sobre a ansiedade" />
+                            <audio controls title="Audio sobre a ansiedade">
+                                <source src="./src/data/tts/ansiedade_page.mp3" type="audio/mp3" alt="Audio sobre a ansiedade" aria-labelledby="Audio sobre a ansiedade" />
                             </audio>
                         </div>
                         <div class="section-header__video-box">
-                            <iframe class="video" width="100%" height="100%" aria-details="Video explicando o que é a ansiedade" src="https://www.youtube.com/embed/Tv0gJTBmVuc" title="Video explicando o que é a ansiedade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="video" width="100%" height="100%" aria-labelledby="Video explicando o que é a ansiedade" src="https://www.youtube.com/embed/Tv0gJTBmVuc" title="Video explicando o que é a ansiedade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </header>
 
                     <article class="content">
                         <p>
-                            A<strong>ansiedade</strong>é uma resposta natural do nosso corpo a determinada situação, um mecanismo de sobrevivência para lidar com situações em que entendemos estar em perigo, como um tipo de expectativa em relação ao que está por vir. 
+                            A Ansiedade pode ser considerada como uma emoção de alarme que se encontra associada a sensações de angústia, tensão e insegurança que, quando são frequentes e/ou intensas e incontroláveis, causando mal estar significativo, conduzem a patologia (doença). A pessoa que sofre de ansiedade sente-se angustiada, ameaçada, bloqueada e pode inclusivamente dizer ter “maus pressentimentos”, mesmo sem, muitas vezes, conseguir identificar o motivo que está a causar esse mal estar. 
                         </p>
-                        <p>
-                            Os<strong>sintomas</strong>de<strong>ansiedade</strong>podem se manifestar a nível físico, como a sensação de aperto no peito e tremores, ou a nível emocional como a presença de pensamentos negativos, preocupação, insegurança ou medo, por exemplo e, geralmente, surgem vários<strong>sintomas</strong>ao mesmo tempo. 
-                        </p>
-                        <p>
-                            Como te ajudar? 
+                    </article>
+                </section>
 
-                            <ul>
-                                <li>Procure organizar sua Rotina diariamente</li>
-                                <li>Invista no autoconhecimento</li>
-                                <li>Procure entender seus pensamentos e sentimentos</li>
-                                <li>Aprenda e controle a sua própria Respiração</li>
-                                <li>Tome uma bebida relaxante</li>
-                                <li>Converse com pessoas que te fazem bem....</li>
-                            </ul>
+                <section class="container mental-disease">
+                    <header class="section-header">
+                        <h3 class="section-header__subheading">
+                            Sintomas
+                        </h3>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            Os <strong>sintomas</strong> de <strong>ansiedade</strong> podem se manifestar a nível físico, como a sensação de aperto no peito e tremores, ou a nível emocional como a presença de pensamentos negativos, preocupação, insegurança ou medo, por exemplo e, geralmente, surgem vários <strong>sintomas</strong> ao mesmo tempo. 
                         </p>
                     </article>
                 </section>	
+                        
+                <section class="container mental-disease">
+                    <header class="section-header">
+                        <h3 class="section-header__subheading">
+                            Quem pode ser afetado pela ansiedade?
+                        </h3>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            A ansiedade pode atingir indivíduos de qualquer idade e sexo, inclusivamente crianças (ansiedade infantil). 
+                        </p>
+                        <p>
+                            Os dados mais recentes da OMS estimam que existam cerca de 264 milhões de pessoas a sofrer de ansiedade em todo o mundo e indicam que as perturbações de ansiedade são mais frequentes no sexo feminino, embora também afetem homens. 
+                        </p>
+                        <p>
+                            Relativamente à idade, a ansiedade pode manifestar-se não só em adultos/jovens adultos, como também em crianças e em pessoas mais idosas. 
+                        </p>
+                        <p>
+                            É particularmente importante estar atento aos sinais das crianças, visto que nestas, quando ainda têm poucos meses ou anos e não conseguem exprimir de forma clara o que estão a sentir, a ansiedade pode manifestar-se através de birras ou choro. 
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container mental-disease">
+                    <header class="section-header">
+                        <h3 class="section-header__subheading">
+                            Quando surge a ansiedade?
+                        </h3>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            A ansiedade pode ocorrer em qualquer momento do dia, dependendo do estímulo que a desencadeia. 
+                        </p>
+                        <p>
+                            Certos episódios podem ser desencadeados por elementos surpresa no dia a dia, como um desacato no trânsito. Situações pontuais, como este exemplo da condução, podem gerar pensamentos intrusivos/negativos e frequentes sensações desagradáveis que, por sua vez, podem desencadear crises ou perturbações de ansiedade a longo prazo. 
+                        </p>
+                        <p>
+                            Episódios de ansiedade ao acordar ou ao adormecer são, igualmente, comuns. 
+                        </p>
+                        <p>
+                            É particularmente importante estar atento aos sinais das crianças, visto que nestas, quando ainda têm poucos meses ou anos e não conseguem exprimir de forma clara o que estão a sentir, a ansiedade pode manifestar-se através de birras ou choro. 
+                        </p>
+                        <p>
+                            O início e o final do dia são momentos favoráveis à reflexão e, por isso mesmo, podem provocar sensações de preocupação excessiva com o que pode acontecer no futuro, com ou sem motivo concreto ou racional. Pode também acontecer que, devido a uma noite mal dormida, a pessoa se sinta tensa ao despertar ou ainda se recorde de pesadelos ocorridos durante a noite, acordando com sensações de desassossego, dores no peito, falta de ar...
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container mental-disease">
+                    <header class="section-header">
+                        <h3 class="section-header__subheading">
+                            Que estímulos podem desencadear a ansiedade? 
+                        </h3>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            Existem diversos estímulos que podem desencadear os momentos de ansiedade, tais como problemas físicos/biológicos (ex: alterações hormonais), contexto profissional (ex: possibilidade de desemprego) ou académico (ex: momentos de avaliação), fatores familiares (ex: divórcio), dilemas pessoais (ex: orientação sexual), situações de infância (ex: negligência), entre outros, como eventos decorrentes de catástrofes ou incidentes / acidentes graves. 
+                        </p>
+                        <p>
+                            Cada caso é único e é importante explorar a anamnese (história de vida) da pessoa para ser possível detetar a origem e os estímulos que fazem surgir esta emoção negativa de modo a se conseguir intervir adequadamente.
+                        </p>
+                        <p>
+                            Existe, ainda, o termo de ansiedade positiva, que está associado a períodos de adaptação e nos motiva a agir ou a procurar mais e melhor no dia a dia. Esta não é, no entanto, patológica, embora possa originar outros problemas, ou evoluir para patologia ansiosa, caso o nível de intensidade aumente. 
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container mental-disease">
+                    <header class="section-header">
+                        <h3 class="section-header__subheading">
+                            Tratamento da ansiedade 
+                        </h3>
+                    </header>
+
+                    <article class="content">
+                        <p>
+                            Como vimos até ao momento, a ansiedade pode manifestar-se de diversas formas e a sua etiologia (origem) pode ser variada. Por isso mesmo, não existe um único caminho para controlar a ansiedade, mas sim vários que devem ser avaliados mediante as características evidenciadas em cada caso. 
+                        </p>
+                        <p>
+                            Cada caso é único e é importante explorar a anamnese (história de vida) da pessoa para ser possível detetar a origem e os estímulos que fazem surgir esta emoção negativa de modo a se conseguir intervir adequadamente.
+                        </p>
+                        <p>
+                            Existe, ainda, o termo de ansiedade positiva, que está associado a períodos de adaptação e nos motiva a agir ou a procurar mais e melhor no dia a dia. Esta não é, no entanto, patológica, embora possa originar outros problemas, ou evoluir para patologia ansiosa, caso o nível de intensidade aumente. 
+                        </p>
+                        <p>
+                            Por vezes, alterações nos hábitos do dia a dia permitem-nos lidar melhor com a ansiedade e podem minimizar ou conduzir ao desaparecimento do problema. Em outros casos, o combate à ansiedade passa por uma intervenção mais especializada. 
+                        </p>
+                        <p>
+                            A psicoterapia ou acompanhamento psicológico pode ajudar numa melhor compreensão do problema e na forma como este é encarado, promovendo ainda a aquisição e o treino de estratégias para minimizar os sintomas que a pessoa apresenta. 
+                        </p>
+                    </article>
+                </section>
+
+                <section class="container mental-disease">
+                    <header class="section-header">
+                        <h3 class="section-header__subheading">
+                            Dicas para te ajudar? 
+                        </h3>
+                    </header>
+
+                    <article class="content">
+                       <ul class="ul-simple">
+                           <li class="ul-simple__item">
+                               Procure organizar sua Rotina diariamente 
+                           </li>
+                           <li class="ul-simple__item">
+                               Invista no autoconhecimento 
+                           </li>
+                           <li class="ul-simple__item">
+                               Procure entender seus pensamentos e sentimentos 
+                           </li>
+                           <li class="ul-simple__item">
+                               Aprenda e controle a sua própria Respiração 
+                           </li>
+                           <li class="ul-simple__item">
+                               Tome uma bebida relaxante 
+                           </li>
+                           <li class="ul-simple__item">
+                               Converse com pessoas que te fazem bem
+                           </li>
+                       </ul>
+                    </article>
+                </section>
             </main>
 
-            <div class="box-google-translate">
+            <div class="box-google-translate box-google-translate-footer">
             </div>
             <footer class="page__footer">
                 <section class="footer-credits">
@@ -154,19 +279,19 @@
 
                     <ul class="list-services">
                         <li class="list-item">
-                            <a href="www.cvv.org.br" class="list-item__link" title="CVV | Centro de Valorização da Vida" aria-details="CVV | Centro de Valorização da Vida">
+                            <a href="www.cvv.org.br" class="list-item__link" title="CVV | Centro de Valorização da Vida" aria-labelledby="CVV | Centro de Valorização da Vida">
                                 CVV | Centro de Valorização da Vida
                             </a>
                         </li>
 
                         <li class="list-item">
-                            <a href="#" class="list-item__link" title="Psicólogos online - Doctoralia" aria-details="Psicólogos online - Doctoralia">
+                            <a href="#" class="list-item__link" title="Psicólogos online - Doctoralia" aria-labelledby="Psicólogos online - Doctoralia">
                                 Psicólogos online - Doctoralia
                             </a>
                         </li>
 
                         <li class="list-item">
-                            <a href="#" class="list-item__link" title="Central Psicologia - Fale com um psicólogo online!" aria-details="Central Psicologia - Fale com um psicólogo online!">
+                            <a href="#" class="list-item__link" title="Central Psicologia - Fale com um psicólogo online!" aria-labelledby="Central Psicologia - Fale com um psicólogo online!">
                                 Central Psicologia - Fale com um psicólogo online!
                             </a>
                         </li>
@@ -178,14 +303,25 @@
             <a href="#root" class="btn scroll-top" id="scroll-top">
                 <i class="fas fa-angle-up"></i>
             </a>
+
+            <!--===== element vlibras =====-->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
         </div>
 
-        <<!--===== jquery v2.1.3 =====-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+        <!--===== jquery v2.1.3 =====-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
         <!--===== api translate google =====-->
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <!--===== service google translate =====-->
-        <script type="text/javascript" src="./src/services/googleTranslate.js"></script>
+        <script type="text/javascript" src="./src/services/googleTranslate.js"></script
+        <!--===== service vlibras plugin =====-->
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script type="text/javascript" src="./src/services/vlibras.js"></script>
         <!--===== script js =====-->
         <script src="./src/script.js"></script>
 

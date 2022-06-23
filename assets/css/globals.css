@@ -126,6 +126,7 @@ h5, h6 {
 p, 
 a,
 ol,
+ul,
 address
 {
     font-size: var(--font-size-small);
@@ -137,6 +138,28 @@ address
 *   Global
 *    Classes
 ============ */
+.ul-simple,
+.ol-simple {
+    font-size: var(--font-size-small);
+    padding: 1rem;
+}
+
+.ul-simple {
+    list-style-type: disc;
+}
+.ol-simple {
+    list-style-type: decimal;
+}
+
+
+.ul-simple__item,
+.ol-simple__item {
+    max-width: 100%;
+    min-height: 45px;
+    line-height: 45px;
+    padding: 0.56rem 0.45rem;
+}
+
 .image {
     width: 100%;
     height: auto;
@@ -359,7 +382,7 @@ address
 *     translate
 ============ */
 body.dark .box-google-translate { 
-    background-color: var(--purple-500);
+    background-color: var(--black);
 }
 
 .box-google-translate {
@@ -378,13 +401,13 @@ body.dark .box-google-translate {
     width: 120px;
     margin-left: 40px;
     font-weight: bold;
-    background-color: #111;
+    background-color: #fff;
     padding: 5px 10px;
 }
 .language-selected {	
     display: flex;   
     align-items: center;
-    color: #fff;
+    color: var(--black);
     cursor: pointer;
     line-height: 25px;  
 }
@@ -465,22 +488,40 @@ a.es:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4.6rem;
+    gap: 11.6rem;
 }
 
 
 /* ============
 *   Hero
 ============ */
+#hero-main {
+    background-image: url('../image/hero/main.png');
+    background-position: top;
+}
+#hero-ansiedade {
+    background-image: url('../image/hero/ansiedade.webp');
+}
+#hero-bournout {
+    background-image: url('../image/hero/bournout.jpg');
+}
+#hero-bipo {
+    background-image: url('../image/hero/bipolaridade.jpg');
+}
+#hero-toc {
+    background-image: url('../image/hero/toc.jpg');
+}
+#hero-depress {
+    background-image: url('../image/hero/depression.jpg');
+}
+
 .hero-container {
     width: 100%;
     height: 96vh;
-    margin-bottom: 2.4rem;
-    background-color: var(--purple-400);
-}
-
-body.dark .hero-container {
-    background-color: var(--purple-600);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 6px solid var(--purple-400);
 }
 
 .hero {
@@ -490,7 +531,7 @@ body.dark .hero-container {
     align-items: center;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.5);
     color: white;
     text-align: center;
 }
@@ -536,10 +577,11 @@ body.dark .section-header__heading {
 
 .section-header__subheading {
     color: rgb(66, 64, 64);
+    padding: 1.2rem 0;
 }
 
 body.dark .section-header__subheading {
-    color: rgb(112, 112, 112);
+    color: #c3c3c3;
 }
 
 .section-header__tts-box audio {
@@ -569,6 +611,11 @@ body.dark .section-header__subheading {
     line-height: var(--line-height-xxlarge);
     margin-top: 1.45rem;
     text-align: justify;
+}
+
+.heading-content {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-medium);
 }
 
 

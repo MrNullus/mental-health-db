@@ -11,21 +11,32 @@ Resaltamos que, o **objetivo principal** do projeto é a _acessiblidade_.
 ## Métodos de Acessiblidade:
 Aqui vamos **mecionar** alguns dos **metodos usados** para tornar a página mais **acessivel** possivel, **para** pessoas com: 
 - Deficiencia visual;
+
 - Deficiencia auditiva.
 
 ### + Métodos para Deficiencia Visual:
-[ x ] Metodo 
+- [x] TTS
 
-[ x ] Metodo 
+- [x] Modo Escuro
 
-[ x ] Metodo 
+- [x] Constrastes
+
+- [x] Fontes Legiveis
+
+- [x] HTML Semantico e com Acessibilidade
 
 ### + Métodos para Deficiencia Auditiva:
-[ x ] Metodo 
+- [x] VLibras Plugin
 
-[ x ] Metodo 
+- [x] Videos com Legendas 
 
-[ x ] Metodo 
+- [x] HTML Semantico e com Acessibilidade
+
+
+### + Outros Métodos
+
+- [x] Troca de Idioma
+
 
 <br>
 
